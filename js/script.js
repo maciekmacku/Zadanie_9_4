@@ -12,16 +12,27 @@ drawTree(10)
 
 // dla ambitnych 
 
+function drawAsterisksTree(size) {
+	var asterisk="*";
+	for (var i=0; i<size; i++) {
+		var d = size - i;
+		var line = "";
+		while (d > 1) {
+			line = line.concat(' ');
+			d--;
+		}
+		console.log(line + asterisk);
+		asterisk = asterisk.concat("**");
+	}
+}
 
-
-
-
+drawAsterisksTree(10);
 
 // petle for
 
 for ( var k = 0 ; k < 10 ; k++) {
   console.log('The value of k is now: ' + k);
-}
+} 
 
 // petla while
 var i = 0;
